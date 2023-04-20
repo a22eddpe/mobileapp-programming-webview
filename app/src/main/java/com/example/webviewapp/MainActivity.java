@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showInternalWebPage(){
-        myWebView.loadUrl("file:///android_asset/html.html");
+        myWebView.loadUrl("file:///android_asset/stuff.html");
     }
 
     @Override
