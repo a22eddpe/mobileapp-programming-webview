@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -21,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showInternalWebPage(){
-        myWebView.loadUrl("file:///android_asset/stuff.html");
+
+        myWebView.loadUrl("file:///android_asset/om.html");
     }
 
     @Override
@@ -32,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         myWebView = findViewById(R.id.my_webview);
+        myWebView.setWebViewClient(new WebViewClient());
+        myWebView.loadUrl("https://his.se");
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        myWebView.setWebViewClient(new WebViewClient());
-        //myWebView.getSettings().setJavaScriptEnabled(true);
 
 
         /*
