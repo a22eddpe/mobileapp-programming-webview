@@ -1,4 +1,4 @@
-READ ME
+
 Började med att skapa mitt eget projekt genom att forka och clona ner det förbyggda appen till Android Studio.
 Sedan ändrade jag namnet på appen till Eddas WebView
 
